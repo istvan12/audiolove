@@ -23,7 +23,6 @@ public class SingletonContainer {
 	 * @return 
 	 */
 	public void addVolatile(int Volatile) {
-		throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -31,8 +30,7 @@ public class SingletonContainer {
 	 * @param Movable
 	 * @return 
 	 */
-	public void addMovable(int Movable) {
-		throw new UnsupportedOperationException();
+	public void addMovable(Movable movable) {
 	}
 
 	/**
@@ -40,7 +38,7 @@ public class SingletonContainer {
 	 * @return 
 	 */
 	public static SingletonContainer getInstance() {
-		throw new UnsupportedOperationException();
+		return null;
 	}
 
 	/**
@@ -48,7 +46,7 @@ public class SingletonContainer {
 	 * @return 
 	 */
 	public List<Movable> getMovables() {
-		throw new UnsupportedOperationException();
+		return null;
 	}
 
 	/**
@@ -56,7 +54,7 @@ public class SingletonContainer {
 	 * @return 
 	 */
 	public List<Volatile> getVolatiles() {
-		throw new UnsupportedOperationException();
+		return null;
 	}
 
 	/**
@@ -64,8 +62,7 @@ public class SingletonContainer {
 	 * @param Volatile
 	 * @return 
 	 */
-	public void removeVolatile(int Volatile) {
-		throw new UnsupportedOperationException();
+	public void removeVolatile(Volatile volatile_) {
 	}
 
 	/**
@@ -73,8 +70,7 @@ public class SingletonContainer {
 	 * @param Movable
 	 * @return 
 	 */
-	public void removeMovable(int Movable) {
-		throw new UnsupportedOperationException();
+	public void removeMovable(Movable movable) {
 	}
 
 	/**
@@ -82,8 +78,7 @@ public class SingletonContainer {
 	 * @param Integer
 	 * @return 
 	 */
-	public void decreaseAntKillerSpray(int Integer) {
-		throw new UnsupportedOperationException();
+	public void decreaseAntKillerSpray(Integer strength) {
 	}
 
 	/**
@@ -91,8 +86,7 @@ public class SingletonContainer {
 	 * @param Integer
 	 * @return 
 	 */
-	public void decreaseAntSmellSpray(int Integer) {
-		throw new UnsupportedOperationException();
+	public void decreaseAntSmellSpray(Integer strength) {
 	}
 
 }

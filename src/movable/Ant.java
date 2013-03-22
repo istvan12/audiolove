@@ -8,10 +8,10 @@ import land.Dir;
 public class Ant extends Item implements Movable {
 
 	private Tentacle tentacle;
-	private Boolean isKilled = false;
-	private Boolean isActive = false;
+	private boolean isKilled = false;
+	private boolean isActive = false;
 	private Integer wait;
-	private Boolean haveFood = false;
+	private boolean haveFood = false;
 	private Integer HP;
 	private Dir dir;
 
@@ -20,8 +20,7 @@ public class Ant extends Item implements Movable {
 	 * @param Integer
 	 * @return 
 	 */
-	public void lostHP(int Integer) {
-		throw new UnsupportedOperationException();
+	public void looseHP(Integer hp) {
 	}
 
 	/**
@@ -29,7 +28,6 @@ public class Ant extends Item implements Movable {
 	 * @return 
 	 */
 	public void pickUpFood() {
-		throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -37,7 +35,6 @@ public class Ant extends Item implements Movable {
 	 * @return 
 	 */
 	public void rest() {
-		throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -45,7 +42,6 @@ public class Ant extends Item implements Movable {
 	 * @return 
 	 */
 	public void reverseDir() {
-		throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -53,7 +49,6 @@ public class Ant extends Item implements Movable {
 	 * @return 
 	 */
 	public void kill() {
-		throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -61,19 +56,16 @@ public class Ant extends Item implements Movable {
 	 * @param Dir
 	 * @return 
 	 */
-	public void setDir(int Dir) {
-		throw new UnsupportedOperationException();
+	public void setDir(Dir dir) {
 	}
 
 	@Override
 	public void step() {
-		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void setAlive() {
-		// TODO Auto-generated method stub
 		
 	}
 	/**
@@ -84,7 +76,7 @@ public class Ant extends Item implements Movable {
 	public void collisionWithAnt(Ant ant, boolean b) {
 		Singleton s = Singleton.Instance();
 		
-		Integer id = s.stack.remove(s.stack.size()-1);
+		Integer id = s.stack.get(s.stack.size()-1);
 		
 		s.makeSpace(">> CALL: " + id + ": Ant.collisionWithAnt(" + s.ants.indexOf(ant) + ": Ant, " + String.valueOf(b) + ")");
 		s.depth--;

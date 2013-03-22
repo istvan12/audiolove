@@ -2,17 +2,17 @@ package land;
 
 import item.Item;
 
-import java.util.*;
+import java.util.List;
+import java.util.Map;
 
 import program.Singleton;
-
 import smell.Smell;
 
 public class Field {
 
-	private Collection<Item> items;
-	private Field neighbours;
-	private Smell actualField;
+	private List<Item> items;
+	private Map<Dir, Field> neighbours;
+	private List<Smell> smells;
 
 	/**
 	 * 

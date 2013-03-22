@@ -1,12 +1,11 @@
 package smell;
 
-import java.util.*;
-
+import item.Tentacle;
 import land.Field;
 
 public class Smell {
 
-	private Collection<Field> smells;
+	private Field actualField;
 	private Integer strength;
 
 	/**
@@ -14,7 +13,6 @@ public class Smell {
 	 * @return 
 	 */
 	public void decreaseSmell() {
-		throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -22,7 +20,6 @@ public class Smell {
 	 * @return 
 	 */
 	public void IncreaseSmell() {
-		throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -30,8 +27,7 @@ public class Smell {
 	 * @param Field
 	 * @return 
 	 */
-	public void setActualField(int Field) {
-		throw new UnsupportedOperationException();
+	public void setActualField(Field field) {
 	}
 
 	/**
@@ -39,7 +35,6 @@ public class Smell {
 	 * @return 
 	 */
 	public void removeMyself() {
-		throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -47,8 +42,7 @@ public class Smell {
 	 * @param Tentacle
 	 * @return 
 	 */
-	public void smellIt(int Tentacle) {
-		throw new UnsupportedOperationException();
+	public void smellIt(Tentacle tentacle) {
 	}
 
 	/**
@@ -56,7 +50,6 @@ public class Smell {
 	 * @return 
 	 */
 	public void antSmellSpray() {
-		throw new UnsupportedOperationException();
 	}
 
 }
